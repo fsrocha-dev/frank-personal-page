@@ -1,0 +1,292 @@
+
+html, body{
+	margin: 0;
+	padding: 0;
+
+}
+
+body{
+	background-color: #1F262A;
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+	margin-top: 0px;
+	height: 50px;
+
+	animation-name: nav;
+	animation-duration: 4s;
+}
+
+
+nav ul{
+	margin-top: 0px;
+	list-style: none;
+	padding-left: 0px;
+	line-height: 50px;
+	text-align: right;
+}
+
+nav li{
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+nav a:link{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+nav a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+nav a:hover{
+	text-decoration: none;
+	color: #43D7FF;
+}
+
+nav .threeline-icon{
+	display: none;
+}
+
+.main span{
+	color: #43D7FF;
+	display: block;
+}
+
+.main div{
+	display: inline-block;
+	height: 650px;
+}
+
+.profile-picture{
+	width: 40%;
+	text-align: center;
+	margin-top: 130px;
+	animation-name: picture-capa;
+	animation-duration: 2s;
+}
+
+.profile-picture img{
+	width: 320px;
+	border-radius: 160px;
+}
+
+.profile-title{
+	vertical-align: top;
+	width: 59%;
+
+	animation-name: titulo-capa;
+	animation-duration: 2s;
+}
+
+.profile-title h1{
+	font-size: 55px;
+	margin-top: 200px;
+	text-transform: uppercase;
+	line-height: 54px;
+}
+
+.profile-title h2{
+	font-size: 22px;
+	margin-top: -20px;
+	font-weight: 100;
+}
+
+.main-pages{
+	padding: 30px 180px 80px 100px;
+
+	animation-name: main;
+	animation-duration: 2s;
+}
+
+.cv-img{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 280px;
+}
+
+.main-pages h1{
+	font-size: 28px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.main-pages h2{
+	font-weight: normal;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 40px;
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+
+.main-pages h3{
+	font-weight: normal;
+	font-size: 12px;
+	color: #43D7FF;
+	text-transform: uppercase;
+}
+
+.main-pages p{
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 20px;
+	text-align: justify;
+}
+
+.main-pages a:link{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.main-pages a:visited{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.main-pages a:hover{
+	text-decoration: none;
+	color: #43D7FF;
+}
+
+.social-img{
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+}
+
+
+/**************************
+
+ANIMAÇÕES CSS
+
+**************************/
+@keyframes nav{
+	0% {opacity: 0}
+	50% {opacity: 0}
+	100% {opacity: 1}
+}
+
+@keyframes picture-capa{
+	0% {opacity: 0; transform: translate(0px, 30px)}
+	100% {opacity: 1; transform: translate(0px, 0px)}
+}
+
+@keyframes titulo-capa{
+	0% {opacity: 0; transform: translate(0px, -30px)}
+	100% {opacity: 1; transform: translate(0px, 0px)}
+}
+
+@keyframes main{
+	0% {opacity: 0; transform: translate(-30px, 0px)}
+	100% {opacity: 1; transform: translate(0px, 0px)}
+}
+
+
+/**************************
+
+RESPONSIVIDADE
+
+**************************/
+
+@media (max-width: 1000px)
+{
+
+nav {
+	position: static;
+}
+
+nav li{
+	display: none;
+}
+nav li.threeline-icon{
+	display: inline-block;
+}
+
+.main div{
+	display: block;
+	height: auto;
+}
+
+.profile-picture {
+	height: 220px;
+	width: 100%;
+	margin: 0;
+	margin-top: 10px;
+
+}
+
+.profile-picture img {
+	display: block;
+	width: 260px;
+	margin: auto;
+	margin-top: 10px;
+
+}
+
+.profile-title{
+	width: 100%;
+	text-align: center;
+}
+
+.profile-title h1{
+	font-size: 40px;
+	margin-top: 10px;
+	margin-right: 15px;
+	margin-left: 15px;
+	text-transform: uppercase;
+	line-height: 54px;
+}
+
+.profile-title h2{
+	font-size: 18px;
+	margin-top: -20px;
+	margin-right: 15px;
+	margin-left: 15px;
+	font-weight: 100;
+}
+
+.main-pages{
+	padding: 10px 5% 40px 5%;
+}
+
+.main-pages p{
+	line-height: 30px;
+	text-align: left;
+}
+
+.cv-img{
+	float: none;
+	margin-right: 10px;
+	max-width: 80%;
+}
+
+nav {
+	height: auto;
+}
+
+.responsive {
+	height: auto;
+	text-align: center;
+	padding-right: 15%;
+	padding-left: 15%;
+}
+
+
+ .responsive li {
+    display: block;
+    border-bottom: 1px solid gray; 
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+}/*FIM DA MEDIA QUERY XXXX*/
