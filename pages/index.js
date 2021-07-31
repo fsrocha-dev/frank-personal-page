@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../components/Header'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
         <meta name="description" content="Venha aprender e se divertir com javascript!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Header />
       <main className={styles.main}>
       </main>
 
