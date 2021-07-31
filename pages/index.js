@@ -22,13 +22,18 @@ export default function Home(props) {
 
 export async function getStaticProps() {
   const githubData = await fetch('https://api.github.com/users/fsrocha-dev').then(res => res.json())
-  console.log(githubData)
+
+  const URL = process.env.appEnv === 'local' ? process.env.urlDev : process.env.urlProd
+
+  const mediumPostsData = await fetch(`${URL}/api/medium`).then(res => res.json())
+
   return {
     props: {
       github: {
         avatar_url: githubData.avatar_url,
         name: githubData.name
-      }
+      },
+      medium: mediumPostsData[0]
     }
   }
 }
