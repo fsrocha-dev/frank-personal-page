@@ -1,6 +1,6 @@
 import Image from 'next/image'
 export default function Article({ post }) {
-  console.log(post)
+
   const postLink = `https://${process.env.mediumUserName}.medium.com/${post.uniqueSlug}`
   const imageURL = "https://miro.medium.com/max/770/"
   const imageId = post.virtuals.previewImage.imageId
