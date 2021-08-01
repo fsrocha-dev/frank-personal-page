@@ -11,9 +11,15 @@ export default createGlobalStyle`
     color: ${props => props.theme.colors.text};
     font-size: 14px;
     font-family: sans-serif;
+    height: 100vh;
   }
   a {
     color: inherit;
     text-decoration: none;
-}
+  }
+  #__next {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
