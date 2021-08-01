@@ -20,7 +20,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  const githubData = await fetch(`https://api.github.com/users/${process.env.githubUserName}`).then(res => res.json())
+  const githubData = await fetch(`https://api.github.com/users/${process.env.userName.github}`).then(res => res.json())
 
   const URL = process.env.appEnv === 'local' ? process.env.urlDev : process.env.urlProd
 
