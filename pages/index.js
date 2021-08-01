@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer/index.js'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import styles from '../styles/Home.module.css'
@@ -13,9 +14,7 @@ export default function Home(props) {
       </Head>
       <Header githubData={props.github} />
       <Main mediumPost={props.medium} />
-
-      <footer className={styles.footer}>
-      </footer>
+      <Footer />
     </div>
   )
 }
