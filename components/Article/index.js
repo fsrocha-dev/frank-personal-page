@@ -1,8 +1,11 @@
 import Image from 'next/image'
 export default function Article({ post }) {
+  console.log(post)
+  const postLink = `https://${process.env.mediumUserName}.medium.com/${post.uniqueSlug}`
   const imageURL = "https://miro.medium.com/max/770/"
   const imageId = post.virtuals.previewImage.imageId
   const tags = post.virtuals.tags
+
   return (
     <article>
       <Image
@@ -11,7 +14,9 @@ export default function Article({ post }) {
         width={600}
         height={250}
       />
-      <h1>{post.title}</h1>
+      <a target="_blank" href={postLink} rel="noopener noreferrer">
+        <h1>{post.title}</h1>
+      </a>
       <p>{post.previewContent2.subtitle}</p>
       <ul>
         {tags && tags.map((tag) => (
