@@ -1,12 +1,17 @@
 import Head from 'next/head'
-import Footer from '../components/Footer/index.js'
+import { ThemeProvider } from 'styled-components'
+import GlobalStyle from '../styles/global'
+import Light from '../styles/themes/light'
+import Dark from '../styles/themes/dark'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Main from '../components/Main'
 
 
 export default function Home(props) {
   return (
-    <div className="">
+    <ThemeProvider theme={Light}>
+      <GlobalStyle />
       <Head>
         <title>Frank Rocha</title>
         <meta name="description" content="Venha aprender e se divertir com javascript!" />
@@ -15,7 +20,7 @@ export default function Home(props) {
       <Header githubData={props.github} />
       <Main mediumPost={props.medium} />
       <Footer />
-    </div>
+    </ThemeProvider>
   )
 }
 
