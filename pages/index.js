@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Main from '../components/Main'
 import styles from '../styles/Home.module.css'
 
 export default function Home(props) {
@@ -11,8 +12,7 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header githubData={props.github} />
-      <main className={styles.main}>
-      </main>
+      <Main mediumPost={props.medium} />
 
       <footer className={styles.footer}>
       </footer>
@@ -33,7 +33,7 @@ export async function getStaticProps() {
         avatar_url: githubData.avatar_url,
         name: githubData.name
       },
-      medium: mediumPostsData[0]
+      medium: mediumPostsData
     }
   }
 }

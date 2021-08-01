@@ -1,7 +1,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['avatars.githubusercontent.com'],
+    domains: ['avatars.githubusercontent.com', 'miro.medium.com'],
   },
   env: {
     githubUserName: 'fsrocha-dev',
