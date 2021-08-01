@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Footer from '../components/Footer/index.js'
 import Header from '../components/Header'
 import Main from '../components/Main'
-import styles from '../styles/Home.module.css'
+
 
 export default function Home(props) {
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
         <title>Frank Rocha</title>
         <meta name="description" content="Venha aprender e se divertir com javascript!" />
