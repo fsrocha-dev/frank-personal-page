@@ -18,7 +18,7 @@ export default function Footer() {
           <FaTwitterSquare />
         </a>
       </nav>
-      <p>Orgulhosamente desenvolvido por Frank Rocha 💚</p>
+      <p>Feito com 💚 e NextJs por min</p>
     </footer>
   )
 }
