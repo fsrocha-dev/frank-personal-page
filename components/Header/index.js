@@ -1,5 +1,11 @@
+import { useContext } from 'react'
+import { ThemeContext } from 'styled-components'
 import Image from 'next/image'
-export default function Header({ githubData }) {
+import Switch from 'react-switch'
+
+export default function Header({ githubData, changeTheme }) {
+  const { title, colors } = useContext(ThemeContext)
+
   return (
     <header>
       <Image
@@ -9,6 +15,14 @@ export default function Header({ githubData }) {
         height={50}
       />
       <h1>{githubData.name}</h1>
+      <Switch
+        onChange={changeTheme}
+        checked={title === 'dark'}
+        checkedIcon={false}
+        uncheckedIcon={false}
+        offColor={colors.primary}
+        onColor={colors.secundary}
+      />
     </header>
   )
 }

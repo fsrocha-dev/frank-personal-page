@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/global'
 import Light from '../styles/themes/light'
@@ -9,15 +10,21 @@ import Main from '../components/Main'
 
 
 export default function Home(props) {
+  const [theme, setTheme] = useState(Dark)
+
+  const changeTheme = () => {
+    setTheme(theme.title === 'dark' ? Light : Dark)
+  }
+
   return (
-    <ThemeProvider theme={Light}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Head>
         <title>Frank Rocha</title>
         <meta name="description" content="Venha aprender e se divertir com javascript!" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header githubData={props.github} />
+      <Header githubData={props.github} changeTheme={changeTheme} />
       <Main mediumPost={props.medium} />
       <Footer />
     </ThemeProvider>
