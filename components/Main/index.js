@@ -1,10 +1,13 @@
-import Article from "../Article/index.js"
-import Card from "../Card/index.js"
+import Article from '../Article/index.js'
+import Card from '../Card/index.js'
+import { Title } from './styles'
 
 export default function Main({ mediumPost }) {
   return (
     <main>
+      <Title>Artigo mais recente 🔥</Title>
       <Article post={mediumPost[0]} />
+      <Title>Meus links 🔗</Title>
       <div>
         <Card
           title="Artigos"

@@ -6,6 +6,7 @@ const theme = {
     secundary: '#ffa7c4',
 
     background: '#f5f5f5',
+    backgroundTransparent: '#eeeded',
     text: '#333333'
   }
 }

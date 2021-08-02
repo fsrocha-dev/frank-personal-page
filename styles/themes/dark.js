@@ -5,7 +5,9 @@ const theme = {
     primary: '#ffa7c4',
     secundary: '#d23669',
 
-    background: '#111827',
+    background: '#282c35',
+    backgroundTransparent: 'rgb(16 17 18 / 14%)',
+    // backgroundTransparent: 'rgb(35 38 44 / 31%)',
     text: '#ffffff'
   }
 }

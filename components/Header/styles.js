@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 95vw;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   display: flex;
   justify-content: flex-end;
 `
@@ -15,6 +15,7 @@ export const Profile = styled.div`
   margin: 0 auto;
   transform: translateX(30px);
   & h1 {
+    font-size: 30px;
     margin-top: 16px;
     color: ${props => props.theme.colors.primary}
   }
