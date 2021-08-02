@@ -1,11 +1,11 @@
 import Article from '../Article/index.js'
 import Card from '../Card/index.js'
-import { Title } from './styles'
+import { Title, MainContainer } from './styles'
 
 export default function Main({ mediumPost }) {
   console.log(mediumPost)
   return (
-    <main>
+    <MainContainer>
       <Title>Recent Posts 🔥</Title>
       <Article post={mediumPost[0]} />
       <Title>My links 🔗</Title>
@@ -21,7 +21,7 @@ export default function Main({ mediumPost }) {
           link="https://www.youtube.com/channel/UCYRMu-9XhWGrahrFvjTtIjA"
         />
       </div>
-    </main>
+    </MainContainer>
   )
 }
 
