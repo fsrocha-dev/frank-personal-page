@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ArticleContainer = styled.article`
-  /* width: 80vw; */
   height: 250px;
   padding: 20px;
   display: flex;
@@ -39,13 +38,13 @@ export const ArticleContent = styled.div`
 `
 
 export const ArticleTitle = styled.h1`
-  font-size: 28px;
+  font-size: 2.9vh;
   transition: 100ms;
   color: ${props => props.theme.colors.primary};
 `
 
 export const ArticleSubtitle = styled.p`
-  font-size: 19px;
+  font-size: 2.1vh;
   margin-top: 20px;
 `
 
