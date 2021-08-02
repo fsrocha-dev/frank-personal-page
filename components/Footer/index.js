@@ -1,24 +1,38 @@
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
+import { useContext } from 'react'
+import {
+  FaGithubSquare,
+  FaLinkedin,
+  FaTwitterSquare
+} from 'react-icons/fa'
+import { FooterContainer, FooterNav } from './styles';
+import { ThemeContext } from 'styled-components';
 
 export default function Footer() {
+  const { colors } = useContext(ThemeContext)
+
   const linkedinURL = `https://www.linkedin.com/in/${process.env.userName.linkedin}/`
   const twitterURL = `https://twitter.com/${process.env.userName.twitter}`
   const githubURL = `https://github.com/${process.env.userName.github}`
 
   return (
-    <footer>
-      <nav>
+    <FooterContainer>
+      <FooterNav>
         <a target="_blank" href={githubURL} rel="noopener noreferrer">
-          <FaGithubSquare />
+          <FaGithubSquare color={colors.primary} />
         </a>
         <a target="_blank" href={linkedinURL} rel="noopener noreferrer">
-          <FaLinkedin />
+          <FaLinkedin color={colors.primary} />
         </a>
         <a target="_blank" href={twitterURL} rel="noopener noreferrer">
-          <FaTwitterSquare />
+          <FaTwitterSquare color={colors.primary} />
         </a>
-      </nav>
-      <p>Feito com 💚 e NextJs por min</p>
-    </footer>
+      </FooterNav>
+      <p>
+        <span>
+          Feito com 💖 e NextJs por
+        </span>
+        <a target="_blank" href={githubURL} rel="noopener noreferrer"> min</a>
+      </p>
+    </FooterContainer>
   )
 }

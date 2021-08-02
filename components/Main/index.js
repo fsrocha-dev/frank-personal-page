@@ -3,11 +3,12 @@ import Card from '../Card/index.js'
 import { Title } from './styles'
 
 export default function Main({ mediumPost }) {
+  console.log(mediumPost)
   return (
     <main>
-      <Title>Artigo mais recente 🔥</Title>
+      <Title>Recent Posts 🔥</Title>
       <Article post={mediumPost[0]} />
-      <Title>Meus links 🔗</Title>
+      <Title>My links 🔗</Title>
       <div>
         <Card
           title="Artigos"

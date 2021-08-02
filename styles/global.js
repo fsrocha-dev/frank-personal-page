@@ -7,6 +7,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
   body {
+    transition: 400ms;
     background: ${props => props.theme.colors.background};
     color: ${props => props.theme.colors.text};
     font-size: 14px;

@@ -7,7 +7,7 @@ const theme = {
 
     background: '#282c35',
     backgroundTransparent: 'rgb(16 17 18 / 14%)',
-    // backgroundTransparent: 'rgb(35 38 44 / 31%)',
+    backgroundMediumTransparent: 'rgb(16 17 18 / 20%)',
     text: '#ffffff'
   }
 }

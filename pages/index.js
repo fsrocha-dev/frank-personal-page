@@ -27,7 +27,7 @@ export default function Home(props) {
       </Head>
       <Header githubData={props.github} changeTheme={changeTheme} />
       <Main mediumPost={props.medium} />
-      {/* <Footer /> */}
+      <Footer />
     </ThemeProvider>
   )
 }

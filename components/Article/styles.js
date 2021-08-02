@@ -8,6 +8,10 @@ export const ArticleContainer = styled.article`
   justify-content: space-between;
   border-radius: 10px;
   background: ${props => props.theme.colors.backgroundTransparent};
+  transition: 200ms;
+  &:hover {
+    background: ${props => props.theme.colors.backgroundMediumTransparent};
+  }
   @media(max-width: 800px) {
     flex-direction: column;
     align-items: center;
@@ -36,6 +40,7 @@ export const ArticleContent = styled.div`
 
 export const ArticleTitle = styled.h1`
   font-size: 28px;
+  transition: 100ms;
   color: ${props => props.theme.colors.primary};
 `
 
@@ -51,6 +56,7 @@ export const ArticleTags = styled.ul`
   gap: 12px;
   margin-top: 20px;
   & li {
+    transition: 100ms;
     border: 1px solid ${props => props.theme.colors.primary};
     border-radius: 4px;
     padding: 4px;

@@ -7,6 +7,7 @@ const theme = {
 
     background: '#f5f5f5',
     backgroundTransparent: '#eeeded',
+    backgroundMediumTransparent: '#dedede',
     text: '#333333'
   }
 }
