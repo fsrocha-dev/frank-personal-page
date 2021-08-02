@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import mediumJSONFeed from 'medium-json-feed'
 import { useState, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/global'
@@ -33,15 +34,13 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  // const githubData = await fetch(`https://api.github.com/users/${process.env.userName.github}`).then(res => res.json())
-  const githubData = {
-    avatar_url: "https://avatars.githubusercontent.com/u/38115122?v=4",
-    name: 'Frank Rocha'
-  }
+  const githubData = await fetch(`https://api.github.com/users/${process.env.userName.github}`).then(res => res.json())
+
+  const mediumPostsData = await mediumJSONFeed(`@${process.env.userName.medium}`)
 
   const URL = process.env.appEnv === 'local' ? process.env.urlDev : process.env.urlProd
 
-  const mediumPostsData = await fetch(`${URL}/api/medium`).then(res => res.json())
+  // const mediumPostsData = await fetch(`${URL}/api/medium`).then(res => res.json())
 
   return {
     props: {
@@ -49,7 +48,7 @@ export async function getStaticProps() {
         avatar_url: githubData.avatar_url,
         name: githubData.name
       },
-      medium: mediumPostsData
+      medium: mediumPostsData.response
     }
   }
 }

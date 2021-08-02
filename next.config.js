@@ -10,8 +10,8 @@ module.exports = {
       linkedin: 'frankrochadev',
       twitter: 'frankrocha_dev'
     },
-    appEnv: "local",
+    appEnv: "dev",
     urlDev: "http://localhost:3000",
-    urlProd: "http://localhost:3000"
+    urlProd: "https://frankrocha.dev"
   },
 }
