@@ -1,13 +1,12 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
 
 export default function Home(props) {
   const { title, description } = props
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>{title}</title>
         <meta content={title} property="og:title" />
