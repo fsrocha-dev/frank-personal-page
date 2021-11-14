@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import mediumJSONFeed from 'medium-json-feed'
 import { useState, useEffect } from 'react'
-import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/global'
 import Light from '../styles/themes/light'
 import Dark from '../styles/themes/dark'
@@ -19,17 +18,17 @@ export default function Home(props) {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Head>
-        <title>Frank Rocha</title>
-        <meta name="description" content="Venha aprender e se divertir com javascript!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Header githubData={props.github} changeTheme={changeTheme} />
-      <Main mediumPost={props.medium} />
-      <Footer />
-    </ThemeProvider>
+      <>
+        <GlobalStyle />
+        <Head>
+          <title>Frank Rocha</title>
+          <meta name="description" content="Venha aprender e se divertir com javascript!" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Header githubData={props.github} changeTheme={changeTheme} />
+        <Main mediumPost={props.medium} />
+        <Footer />
+      </>
   )
 }
 
