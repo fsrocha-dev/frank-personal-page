@@ -1,0 +1,41 @@
+:root {
+  --primaryColor: #f2f2f2;
+  --secondaryColor: #8f9ba8;
+  --backgroundColor: #1e2028;
+  --commandColor: rgba(255, 255, 255, 0.05);
+  --hoverColor: #212024;
+
+  --gradientDegree: 135deg;
+  --yellow: #ffff80;
+  --pink: #ff80bf;
+  --purple: #9580ff;
+  --red: #ff9580;
+  --orange: #ffca80;
+  --green: #8aff80;
+  --cyan: #80ffea;
+
+  --borderRadius: 8px;
+
+  --duration: 0.2s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background: var(--backgroundColor);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
