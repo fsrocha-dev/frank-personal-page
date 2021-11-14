@@ -17,7 +17,7 @@ export default function Home(props) {
       </Head>
 
       <Header />
-
+      <h1>Estou na home</h1>
       <Footer />
     </div>
   )
