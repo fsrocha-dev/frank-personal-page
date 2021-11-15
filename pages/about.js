@@ -1,7 +1,11 @@
-import Main from "../layouts/Main"
+import Main from '../layouts/Main'
 
 function About() {
-  return (<div>About</div>);
+  return (
+    <div>
+      <h1>About</h1>
+    </div>
+  )
 }
 
 About.Layout = Main

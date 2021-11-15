@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Header() {
@@ -8,11 +8,11 @@ export default function Header() {
   return (
     <header className="site-header">
       <nav className="site-navbar">
-        <Link href="/" passHref>
+        <NextLink href="/" passHref>
           <button type="button" className="btn-nav btn-logo">
             <span>FR</span>
           </button>
-        </Link>
+        </NextLink>
         <ul>
           {pages.map(page => {
             const path = `/${page.toLowerCase()}`
@@ -23,9 +23,9 @@ export default function Header() {
                   router.pathname == path ? 'site-navbar-link__active' : ''
                 }
               >
-                <Link href={path}>
+                <NextLink href={path} passHref>
                   <a>{page}</a>
-                </Link>
+                </NextLink>
               </li>
             )
           })}

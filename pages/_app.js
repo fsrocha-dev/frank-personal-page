@@ -3,12 +3,12 @@ import 'remixicon/fonts/remixicon.css'
 
 const Noop = ({ children }) => children
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   const Layout = Component.Layout || Noop
 
   return (
     <Layout>
-      <Component {...pageProps} />
+      <Component {...pageProps} key={router.route} />
     </Layout>
   )
 }

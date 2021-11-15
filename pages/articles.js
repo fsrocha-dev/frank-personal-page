@@ -1,9 +1,13 @@
-import Main from "../layouts/Main"
+import Main from '../layouts/Main'
 
-function Articles(props) {
-  return (<div>Articles</div>)
+function Articles() {
+  return (
+    <div>
+      <h1>Articles</h1>
+    </div>
+  )
 }
 
 Articles.Layout = Main
 
-export default Articles;
+export default Articles
