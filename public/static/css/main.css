@@ -112,6 +112,13 @@ Header
   width: 100%;
 }
 
+.site-navbar-link__active > a {
+  color: var(--primaryColor) !important;
+}
+.site-navbar-link__active > a:after {
+  width: 100% !important;
+}
+
 .btn-nav {
   cursor: pointer;
   background-color: transparent;
