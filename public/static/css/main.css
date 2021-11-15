@@ -149,6 +149,59 @@ Header
 
 /*
 ======================
+Footer
+======================
+*/
+.site-footer {
+  background: var(--backgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  z-index: 1;
+}
+
+.site-footer a {
+  color: var(--secondaryColor);
+  padding: 4px 8px;
+  display: flex;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: color var(--duration) ease-in-out;
+}
+
+.site-footer a:hover {
+  color: var(--primaryColor);
+}
+
+.site-footer a i {
+  margin-top: 1px;
+  margin-left: 4px;
+  opacity: 0;
+  transition: opacity var(--duration) ease-in-out;
+}
+
+.site-footer a:hover i {
+  opacity: 1;
+}
+
+/*
+======================
+General
+======================
+*/
+.site-content {
+  flex: 1;
+}
+
+.container {
+  border: 1px solid red;
+}
+
+/*
+======================
 Fonts
 ======================
 */
