@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Main from '../layouts/Main'
 
 export default function Home(props) {
   const { title, description } = props
@@ -15,13 +14,12 @@ export default function Home(props) {
         <meta content="https://frankrocha.dev" property="og:url" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header />
       <h1>Estou na home</h1>
-      <Footer />
     </div>
   )
 }
+
+Home.Layout = Main
 
 export async function getStaticProps() {
   return {
