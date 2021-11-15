@@ -36,11 +36,6 @@ body {
   background: var(--backgroundColor);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 /* Fonts
    ========================================================================== */
 

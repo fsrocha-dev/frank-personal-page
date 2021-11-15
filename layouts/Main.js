@@ -5,7 +5,7 @@ export default function Main({ children }) {
   return (
     <div className="container">
       <Header />
-        {children}
+      {children}
       <Footer />
     </div>
   )
