@@ -3,8 +3,8 @@ export default function Header() {
 
   return (
     <header>
-      FR - fr - Frank Rocha
-      <p></p>
+      Sou o header
+      <p>sdffsf</p>
     </header>
   )
 }
