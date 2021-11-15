@@ -54,7 +54,7 @@ Header
 .site-header {
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 16px;
 }
 
 .site-navbar {
@@ -71,22 +71,45 @@ Header
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 16px;
   list-style: none;
 }
 
 .site-navbar li {
   height: 32px;
   line-height: 32px;
+  /* border: 1px solid red; */
 }
 
 .site-navbar li a {
-  padding: 8px 18px;
-  color: var(--primaryColor);
+  position: relative;
+  padding: 8px 8px;
+  color: var(--secondaryColor);
   text-decoration: none;
   text-transform: uppercase;
   font-size: var(--linkSize);
   font-weight: 500;
   letter-spacing: 1.2px;
+  transition: var(--duration) ease-in-out;
+}
+
+.site-navbar li a:hover {
+  color: var(--primaryColor);
+}
+
+.site-navbar li a:after {
+  content: '';
+  position: absolute;
+  background-color: var(--primaryColor);
+  height: 1px;
+  width: 0;
+  left: 0;
+  bottom: -3px;
+  transition: var(--duration) ease-in-out;
+}
+
+.site-navbar li a:hover:after {
+  width: 100%;
 }
 
 .btn-nav {

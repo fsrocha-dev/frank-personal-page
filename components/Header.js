@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <nav className="site-navbar">
-        <Link href="/">
+        <Link href="/" passHref>
           <button type="button" className="btn-nav btn-logo">
             <span>FR</span>
           </button>
@@ -23,7 +23,7 @@ export default function Header() {
           </li>
         </ul>
         <button type="button" aria-label="Command" className="btn-nav btn-cmd">
-          <i class="ri-command-line"></i>
+          <i className="ri-command-line"></i>
         </button>
       </nav>
     </header>

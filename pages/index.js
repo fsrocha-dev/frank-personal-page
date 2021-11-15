@@ -14,7 +14,6 @@ export default function Home(props) {
         <meta content="https://frankrocha.dev" property="og:url" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Estou na home</h1>
     </div>
   )
 }
@@ -25,7 +24,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Frank Rocha',
-      description: 'Vamos aprender, e nos divertir com javascript!',
-    },
+      description: 'Vamos aprender, e nos divertir com javascript!'
+    }
   }
 }
