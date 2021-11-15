@@ -1,6 +1,15 @@
 {
-  "name": "teste",
+  "name": "frank-personal-page",
+  "version": "3.0.0",
+  "author": "Frank Rocha<>",
+  "description": "Frank Rocha's website",
+  "keywords": [
+    "Portifólio",
+    "Personal site",
+    "Frank Rocha"
+  ],
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
