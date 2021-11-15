@@ -1,4 +1,5 @@
 import '../public/static/css/main.css'
+import 'remixicon/fonts/remixicon.css'
 
 const Noop = ({ children }) => children
 
