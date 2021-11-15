@@ -1,3 +1,10 @@
 export default function Header() {
-  return (<div></div>)
+  const pages = ['About', 'Articles']
+
+  return (
+    <header>
+      FR - fr - Frank Rocha
+      <p></p>
+    </header>
+  )
 }
