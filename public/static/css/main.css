@@ -6,7 +6,7 @@
   --secondaryColor: #8f9ba8;
   --backgroundColor: #1e2028;
   --commandColor: rgba(255, 255, 255, 0.05);
-  --hoverColor: #212024;
+  --hoverColor: #252731;
 
   --gradientDegree: 135deg;
   --yellow: #ffff80;
@@ -18,6 +18,8 @@
   --cyan: #80ffea;
 
   --borderRadius: 8px;
+
+  --linkSize: 12px;
 
   --duration: 0.2s;
 }
@@ -36,8 +38,90 @@ body {
   background: var(--backgroundColor);
 }
 
-/* Fonts
-   ========================================================================== */
+.wrapper {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/*
+======================
+Header
+======================
+*/
+.site-header {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.site-navbar {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  max-width: 768px;
+}
+
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.site-navbar li {
+  height: 32px;
+  line-height: 32px;
+}
+
+.site-navbar li a {
+  padding: 8px 18px;
+  color: var(--primaryColor);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: var(--linkSize);
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.btn-nav {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  height: 32px;
+  padding: 0 6px;
+  border-radius: var(--borderRadius);
+  transition: var(--duration) ease-in-out;
+}
+
+.btn-nav:hover {
+  background: var(--hoverColor);
+}
+
+.btn-logo span {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 38px;
+  text-decoration: none;
+  font-family: var(--headingFont);
+}
+
+.btn-cmd i {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+/*
+======================
+Fonts
+======================
+*/
 
 @font-face {
   font-family: 'Neuzeit Grotesk Bold';
