@@ -1,9 +1,9 @@
-import Subpage from "../layouts/Subpage"
+import Main from "../layouts/Main"
 
 function About() {
   return (<div>About</div>);
 }
 
-About.Layout = Subpage
+About.Layout = Main
 
 export default About
