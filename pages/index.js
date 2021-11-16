@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Main from '../layouts/Main'
+import Bio from '../components/Bio'
 
 export default function Home(props) {
   const { title, description } = props
@@ -14,6 +15,7 @@ export default function Home(props) {
         <meta content="https://frankrocha.dev" property="og:url" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Bio />
     </div>
   )
 }

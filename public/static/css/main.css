@@ -189,15 +189,113 @@ Footer
 
 /*
 ======================
+Bio
+======================
+*/
+.bio-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bio-box h2 {
+  margin: 0;
+  padding: 16px 0 0 0;
+  font-size: 40px;
+  font-family: var(--headingFont);
+}
+
+.bio-box p {
+  margin: -5px 0 0 0;
+}
+
+.bio-photo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid var(--secondaryColor);
+  border-radius: 50%;
+  overflow: hidden;
+  filter: grayscale(70%);
+  position: relative;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.command-box {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -80px;
+}
+
+.command-btn {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.command-btn:hover > .tag-btn-key {
+  background-color: var(--primaryColor);
+}
+
+.tag-btn-key {
+  font-size: 14px;
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+  border: none;
+  color: var(--backgroundColor);
+  display: inline-block;
+  width: 26px;
+  padding: 2px 3px;
+  border-radius: var(--borderRadius);
+  transition: var(--duration) ease-in-out;
+}
+
+@media (max-width: 525px) {
+  .bio-box {
+    justify-content: center;
+  }
+
+  .bio-photo {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/*
+======================
 General
 ======================
 */
 .site-content {
   flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 80px;
 }
 
 .container {
-  border: 1px solid red;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 670px;
+}
+
+.btn-primary {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--primaryColor);
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: var(--borderRadius);
+  transition: var(--duration) ease-in-out;
+}
+
+.btn-primary:hover {
+  background: var(--hoverColor);
 }
 
 /*
