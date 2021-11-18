@@ -265,6 +265,79 @@ Bio
 
 /*
 ======================
+Articles
+======================
+*/
+
+.last-talks-heading {
+  align-self: flex-start;
+}
+
+.last-talks {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.last-talk-item {
+  flex: 0 310px;
+  height: 290px;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: var(--borderRadius);
+  transition: var(--duration) ease-in-out;
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.last-talk-item:hover {
+  background-color: var(--hoverColor);
+}
+
+.last-talk-image {
+  position: relative;
+  height: 200px;
+}
+
+.last-talk-item img {
+  border-radius: var(--borderRadius);
+  filter: grayscale(0.6);
+  opacity: 0.8;
+}
+
+.last-talk-content {
+  margin-top: 12px;
+}
+
+.last-talk-content h3 {
+  font-size: 18px;
+  margin: 0px 0px 5px 0px;
+}
+
+.last-talk-content span {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 525px) {
+  .last-talks-heading {
+    align-self: center;
+  }
+  .last-talk-item {
+    flex: 0 410px;
+    height: 360px;
+  }
+  .last-talk-image {
+    height: 270px;
+  }
+}
+
+/* .last-talk-item:last-child {
+} */
+
+/*
+======================
 General
 ======================
 */

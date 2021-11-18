@@ -54,13 +54,6 @@ const talks = [
     date: '2018-07-12',
     readingTime: 2,
     imagePath: '/static/img/emmet-react-no-vscode-2018-07-12.jpeg'
-  },
-  {
-    title: 'MEAN STACK O QUE É ISSO ?',
-    url: 'https://frankrochajs.medium.com/mean-stack-o-que-%C3%A9-isso-5ade3c5c3735',
-    date: '2021-09-19',
-    readingTime: 4,
-    imagePath: '/static/img/mean-stack-o-que-e-2018-04-27.png'
   }
 ]
 

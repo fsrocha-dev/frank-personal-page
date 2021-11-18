@@ -6,7 +6,9 @@ export default function Bio() {
       <div className="bio-box">
         <div className="bio-text">
           <h2>Frank Rocha</h2>
-          <p>FullStack developer (Educator at Betrybe / Content creator)</p>
+          <p>
+            FullStack developer (Educator at Betrybe / Love JS, Node and PHP)
+          </p>
         </div>
         <div className="bio-photo">
           <Image
