@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 export default function Header() {
   const router = useRouter()
-  const pages = ['About', 'Articles']
+  const pages = ['About', 'Articles', 'Videos']
 
   return (
     <header className="site-header">

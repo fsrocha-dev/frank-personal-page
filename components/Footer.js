@@ -1,6 +1,10 @@
 export default function Footer() {
   return (
     <footer className="site-footer">
+      <a href="https://github.com/fsrocha-dev/frank-personal-page">
+        <span>Source</span>
+        <i className="ri-braces-line"></i>
+      </a>
       <a href="https://github.com/fsrocha-dev" target="_blank" rel="noreferrer">
         <span>Github</span>
         <i className="ri-github-line"></i>
@@ -21,14 +25,14 @@ export default function Footer() {
         <span>Twitter</span>
         <i className="ri-twitter-line"></i>
       </a>
-      <a
+      {/* <a
         href="https://www.instagram.com/_frankrocha/"
         target="_blank"
         rel="noreferrer"
       >
         <span>Instagram</span>
         <i className="ri-instagram-line"></i>
-      </a>
+      </a> */}
     </footer>
   )
 }
