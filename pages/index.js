@@ -6,7 +6,7 @@ export default function Home(props) {
   const { title, description } = props
 
   return (
-    <div className="container">
+    <div className="container cyan">
       <Head>
         <title>{title}</title>
         <meta content={title} property="og:title" />
