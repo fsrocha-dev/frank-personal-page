@@ -5,18 +5,14 @@ export default function Bio() {
     <>
       <div className="bio-box">
         <div className="bio-text">
-          <h2>Frank Rocha</h2>
+          <h1>Frank Rocha</h1>
           <p>
             FullStack developer (Educator at Betrybe / Love JS, Node and PHP)
           </p>
         </div>
         <div className="bio-photo">
           <Image
-            // width={100}
-            // height={100}
             layout={'fill'}
-            // objectFit="contain"
-            // objectPosition="center"
             src="/static/images/iam-min.jpeg"
             alt="Bio image"
           />
