@@ -2,6 +2,7 @@ import Head from 'next/head'
 import ImageItem from '../components/ImageItem'
 import Main from '../layouts/Main'
 import articles from '../data/articles'
+import Section from '../components/Section'
 
 function Articles(props) {
   const { title, description } = props
@@ -17,11 +18,11 @@ function Articles(props) {
       </Head>
 
       <h2 className="last-talks-heading">Last Articles</h2>
-      <div className="last-talks">
+      <Section delay={0.1} className="last-talks">
         {articles.map((article, index) =>
           renderArticleItem({ article, index })
         )}
-      </div>
+      </Section>
     </div>
   )
 }

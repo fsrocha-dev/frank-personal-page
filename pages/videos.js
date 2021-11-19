@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Main from '../layouts/Main'
 import videos from '../data/videos'
+import Section from '../components/Section'
 
 function Videos(props) {
   const { title, description } = props
@@ -31,28 +32,29 @@ const renderVideoItem = props => {
   const { video, index } = props
 
   return (
-    <a
-      key={index}
-      href={video.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="video-item"
-    >
-      <div className="video-thumb">
-        <Image
-          layout="fill"
-          loading="eager"
-          quality="75"
-          src={getYoutubeTumbnail(video.url)}
-          alt={video.title}
-        />
-      </div>
-      <div className="last-video-content">
-        <h3>{video.title}</h3>
-        <h4>{video.channel}</h4>
-        <span>{video.views} VIEWS</span>
-      </div>
-    </a>
+    <Section delay={`0.${index}`} key={index}>
+      <a
+        href={video.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="video-item"
+      >
+        <div className="video-thumb">
+          <Image
+            layout="fill"
+            loading="eager"
+            quality="75"
+            src={getYoutubeTumbnail(video.url)}
+            alt={video.title}
+          />
+        </div>
+        <div className="last-video-content">
+          <h3>{video.title}</h3>
+          <h4>{video.channel}</h4>
+          <span>{video.views} VIEWS</span>
+        </div>
+      </a>
+    </Section>
   )
 }
 

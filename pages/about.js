@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Main from '../layouts/Main'
 import ImageItem from '../components/ImageItem'
+import Section from '../components/Section'
 
 function About(props) {
   const { title, description } = props
@@ -40,36 +41,38 @@ function About(props) {
           </p>
         </div>
       </div>
-      <div className="about-career">
-        <h2>Career</h2>
-        <ul>
-          <li>
-            <span>Nov 2020 to present</span>
-            Working as a Sr Javascript and Educator at Betrybe.com
-          </li>
-          <li>
-            <span> Jan 2020 - Nov 2020</span>
-            He worked as a fullstack developer at Bukly.com, leading the
-            construction of a project
-          </li>
-          <li>
-            <span>Jun 2017 - Jan 2020</span>
-            Worked as a fullstack developer at Youtaf.com
-          </li>
-          <li>
-            <span>Dec 2015 - Apr 2017</span>
-            Served as Freelancer Fullstack for Askcs.com.br
-          </li>
-          <li>
-            <span>Oct 2013 - Aug 2015</span>
-            Worked as a fullstack developer at Mdy Software
-          </li>
-          <li>
-            <span>Mar 2011 - Jun 2013</span>
-            He started his career working as a freelancer php
-          </li>
-        </ul>
-      </div>
+      <Section delay={0.1}>
+        <div className="about-career">
+          <h2>Career</h2>
+          <ul>
+            <li>
+              <span>Nov 2020 to present</span>
+              Working as a Sr Javascript and Educator at Betrybe.com
+            </li>
+            <li>
+              <span> Jan 2020 - Nov 2020</span>
+              He worked as a fullstack developer at Bukly.com, leading the
+              construction of a project
+            </li>
+            <li>
+              <span>Jun 2017 - Jan 2020</span>
+              Worked as a fullstack developer at Youtaf.com
+            </li>
+            <li>
+              <span>Dec 2015 - Apr 2017</span>
+              Served as Freelancer Fullstack for Askcs.com.br
+            </li>
+            <li>
+              <span>Oct 2013 - Aug 2015</span>
+              Worked as a fullstack developer at Mdy Software
+            </li>
+            <li>
+              <span>Mar 2011 - Jun 2013</span>
+              He started his career working as a freelancer php
+            </li>
+          </ul>
+        </div>
+      </Section>
     </div>
   )
 }

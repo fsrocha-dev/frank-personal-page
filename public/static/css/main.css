@@ -205,8 +205,16 @@ Bio
 */
 .bio-box {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  flex: 1;
+}
+
+.bio-heading {
+  display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  min-height: 200px;
 }
 
 .bio-text h1 {
@@ -222,27 +230,29 @@ Bio
 }
 
 .bio-photo {
-  width: 120px;
-  height: 120px;
   border: 2px solid var(--secondaryColor);
   border-radius: 50%;
   overflow: hidden;
   filter: grayscale(70%);
   position: relative;
+  width: 120px;
+  height: 120px;
   max-height: 200px;
   max-width: 200px;
+  margin-top: 20px;
 }
 
 .command-box {
-  flex: 2;
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: -80px;
+  align-items: flex-start;
+  padding-top: 120px;
 }
 
 .command-btn {
   font-size: 16px;
+  line-height: 28px;
   font-weight: 600;
 }
 
@@ -252,15 +262,19 @@ Bio
 
 .tag-btn-key {
   font-size: 14px;
-  cursor: pointer;
-  background-color: var(--secondaryColor);
   border: none;
-  color: var(--backgroundColor);
-  display: inline-block;
+  cursor: pointer;
   width: 26px;
-  padding: 2px 3px;
+  height: 26px;
+  display: inline-block;
+  background-color: var(--secondaryColor);
+  color: var(--backgroundColor);
   border-radius: var(--borderRadius);
   transition: var(--duration) ease-in-out;
+}
+
+.command-key {
+  font-size: 16px;
 }
 
 @media (max-width: 525px) {
@@ -272,6 +286,9 @@ Bio
     margin-top: 50px;
     width: 150px;
     height: 150px;
+  }
+  .bio-heading {
+    justify-content: center;
   }
 }
 
