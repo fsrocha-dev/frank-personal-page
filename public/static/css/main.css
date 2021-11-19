@@ -209,10 +209,11 @@ Bio
   justify-content: space-between;
 }
 
-.bio-box h2 {
+.bio-text h1 {
   margin: 0;
-  padding: 16px 0 0 0;
-  font-size: 40px;
+  padding: 48px 0 8px 0;
+  font-size: 48px;
+  line-height: 48px;
   font-family: var(--headingFont);
 }
 
@@ -221,8 +222,8 @@ Bio
 }
 
 .bio-photo {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border: 2px solid var(--secondaryColor);
   border-radius: 50%;
   overflow: hidden;
@@ -346,6 +347,66 @@ Articles
 
 /* .last-talk-item:last-child {
 } */
+/*
+======================
+About
+======================
+*/
+.about-container {
+  display: flex;
+  gap: 15px;
+}
+
+.about-photo {
+  width: 240px;
+  height: 240px;
+  min-width: 250px;
+  min-height: 138px;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.about-photo img {
+  min-width: 250px;
+  min-height: 138px;
+  box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
+  border-radius: var(--borderRadius);
+  filter: grayscale(0.6);
+  opacity: 0.8;
+}
+
+.about-description {
+  /* width: 100%; */
+  /* min-width: 250px; */
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.about-description p {
+  margin: 0 0 32px 0;
+}
+
+.about-career ul {
+  margin: 0;
+  padding: 0 8px;
+}
+
+.about-career ul li {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.about-career span {
+  min-width: 170px;
+}
+
+@media (max-width: 525px) {
+  .about-container {
+    flex-wrap: wrap;
+  }
+}
 
 /*
 ======================
@@ -455,7 +516,8 @@ General
   flex: 1;
   display: flex;
   flex-direction: column;
-  max-width: 670px;
+  max-width: 690px;
+  margin: 0 20px;
 }
 
 .btn-primary {
