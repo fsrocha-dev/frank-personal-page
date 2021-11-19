@@ -1,9 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Main from '../layouts/Main'
+import ImageItem from '../components/ImageItem'
 
 function About(props) {
   const { title, description } = props
+
   return (
     <div className="container green">
       <Head>
@@ -18,11 +19,10 @@ function About(props) {
       <h2 className="about-heading">I am a Digital Craftsman</h2>
       <div className="about-container">
         <div className="about-photo">
-          <Image
-            layout="fill"
-            loading="eager"
-            quality="75"
-            src="/static/images/iam-best-qa.jpeg"
+          <ImageItem
+            quality={75}
+            name="iam-best-qa.jpeg"
+            path="photos"
             alt="About Frank`s photo"
           />
         </div>
