@@ -43,8 +43,6 @@ const renderVideoItem = props => {
           layout="fill"
           loading="eager"
           quality="75"
-          // width={250}
-          // height={150}
           src={getYoutubeTumbnail(video.url)}
           alt={video.title}
         />
