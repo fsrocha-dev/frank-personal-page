@@ -287,16 +287,16 @@ Articles
 
 .last-talks {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
 }
 
 .last-talk-item {
-  flex: 0 310px;
+  flex: 1;
   height: 290px;
-  margin: 10px 0;
   padding: 10px;
+  margin: 10px 0;
   border-radius: var(--borderRadius);
   transition: var(--duration) ease-in-out;
   text-decoration: none;
@@ -309,12 +309,13 @@ Articles
 
 .last-talk-image {
   position: relative;
-  height: 200px;
+  min-width: 250px;
+  min-height: 188px;
 }
 
 .last-talk-item img {
   border-radius: var(--borderRadius);
-  filter: grayscale(0.6);
+  filter: grayscale(0.6) !important;
   opacity: 0.8;
 }
 
@@ -335,6 +336,9 @@ Articles
 @media (max-width: 525px) {
   .last-talks-heading {
     align-self: center;
+  }
+  .last-talks {
+    justify-content: center;
   }
   .last-talk-item {
     flex: 0 410px;
@@ -371,7 +375,7 @@ About
   min-height: 138px;
   box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
   border-radius: var(--borderRadius);
-  filter: grayscale(0.6);
+  filter: grayscale(0.6) !important;
   opacity: 0.8;
 }
 
