@@ -8,12 +8,6 @@
   --commandColor: rgba(255, 255, 255, 0.05);
   --hoverColor: #252731;
 
-  --gradientDegree: 135deg;
-  --yellow: #ffff80;
-  --pink: #ff80bf;
-  --purple: #9580ff;
-  --red: #ff9580;
-  --orange: #ffca80;
   --green: #8aff80;
   --cyan: #80ffea;
 
@@ -44,6 +38,23 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+/*
+======================
+Selection
+======================
+*/
+.green ::selection {
+  background: var(--green);
+  -webkit-text-fill-color: #000;
+  color: #000;
+}
+
+.cyan ::selection {
+  background: var(--cyan);
+  -webkit-text-fill-color: #000;
+  color: #000;
 }
 
 /*
@@ -335,6 +346,97 @@ Articles
 
 /* .last-talk-item:last-child {
 } */
+
+/*
+======================
+Videos
+======================
+*/
+
+.my-thought-box {
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: var(--borderRadius);
+  background-color: var(--hoverColor);
+  font-family: var(--headingFont);
+}
+
+.last-videos-heading {
+  align-self: flex-start;
+}
+
+.last-videos-container {
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+}
+
+.video-item {
+  flex: 1;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: var(--borderRadius);
+  transition: var(--duration) ease-in-out;
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.video-item:hover {
+  background-color: var(--hoverColor);
+}
+
+.video-thumb {
+  box-sizing: content-box;
+  position: relative;
+  min-width: 250px;
+  min-height: 138px;
+}
+.video-thumb img {
+  min-width: 250px;
+  min-height: 138px;
+  box-shadow: inset 0px 0px 30px 30px rgba(0, 0, 0, 0.9);
+  border-radius: var(--borderRadius);
+  filter: grayscale(0.6);
+  opacity: 0.8;
+}
+
+.last-video-content h3 {
+  font-size: 20px;
+  margin: 0px 0px 5px 0px;
+}
+
+.last-video-content h4 {
+  color: var(--secondaryColor);
+  font-weight: lighter;
+  font-size: 16px;
+  margin: 0px 0px 5px 0px;
+}
+
+.last-video-content span {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 525px) {
+  .my-thought-box {
+    margin: 20px 40px;
+  }
+  .last-videos-heading {
+    align-self: center;
+  }
+  .video-item {
+    margin: 30px;
+    flex-direction: column;
+  }
+  .video-thumb {
+    min-height: 238px;
+  }
+  .video-thumb img {
+    min-height: 238px;
+  }
+}
 
 /*
 ======================
