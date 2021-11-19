@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import ImageItem from './ImageItem'
 
 export default function Bio() {
   return (
@@ -11,9 +11,10 @@ export default function Bio() {
           </p>
         </div>
         <div className="bio-photo">
-          <Image
-            layout={'fill'}
-            src="/static/images/iam-min.jpeg"
+          <ImageItem
+            quality={75}
+            name="iam-min.jpeg"
+            path="photos"
             alt="Bio image"
           />
         </div>
