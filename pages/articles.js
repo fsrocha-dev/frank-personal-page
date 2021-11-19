@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import ImageItem from '../components/ImageItem'
 import Main from '../layouts/Main'
 import articles from '../data/articles'
 
@@ -18,31 +18,38 @@ function Articles(props) {
 
       <h2 className="last-talks-heading">Last Articles</h2>
       <div className="last-talks">
-        {articles.map((article, index) => (
-          <a
-            key={index}
-            href={article.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="last-talk-item"
-          >
-            <div className="last-talk-image">
-              <Image
-                loading="eager"
-                quality="75"
-                layout={'fill'}
-                src={article.imagePath}
-                alt={article.title}
-              />
-            </div>
-            <div className="last-talk-content">
-              <h3>{article.title}</h3>
-              <span>{article.readingTime} MIN READ</span>
-            </div>
-          </a>
-        ))}
+        {articles.map((article, index) =>
+          renderArticleItem({ article, index })
+        )}
       </div>
     </div>
+  )
+}
+
+const renderArticleItem = props => {
+  const { article, index } = props
+
+  return (
+    <a
+      key={index}
+      href={article.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="last-talk-item"
+    >
+      <div className="last-talk-image">
+        <ImageItem
+          quality={75}
+          name={article.imageName}
+          path="images"
+          alt={article.title}
+        />
+      </div>
+      <div className="last-talk-content">
+        <h3>{article.title}</h3>
+        <span>{article.readingTime} MIN READ</span>
+      </div>
+    </a>
   )
 }
 
