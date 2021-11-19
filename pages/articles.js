@@ -6,13 +6,13 @@ import articles from '../data/articles'
 function Articles(props) {
   const { title, description } = props
   return (
-    <div className="container">
+    <div className="container cyan">
       <Head>
         <title>{title}</title>
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://frankrocha.dev" property="og:url" />
+        <meta content="https://frankrocha.dev/articles/" property="og:url" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
