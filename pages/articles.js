@@ -28,7 +28,8 @@ function Articles(props) {
           >
             <div className="last-talk-image">
               <Image
-                loading="lazy"
+                loading="eager"
+                quality="75"
                 layout={'fill'}
                 src={article.imagePath}
                 alt={article.title}
