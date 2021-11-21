@@ -1,5 +1,6 @@
 import ImageItem from './ImageItem'
 import Section from './Section'
+import { useKBar } from 'kbar'
 
 export default function Bio() {
   return (
@@ -23,9 +24,14 @@ export default function Bio() {
         </div>
         <div className="command-box">
           <Section delay={0.1}>
-            <button className="btn-primary command-btn">
+            <button
+              type="button"
+              className="btn-primary command-btn"
+              onClick={useKBar().query.toggle}
+              aria-label="Command Button"
+            >
               Press <kbd className="tag-btn-key command-key">⌘</kbd>{' '}
-              <kbd className="tag-btn-key">K</kbd> to start →
+              <kbd className="tag-btn-key k-key">K</kbd> to start →
             </button>
           </Section>
         </div>
