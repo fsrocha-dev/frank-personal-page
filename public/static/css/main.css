@@ -1,6 +1,7 @@
 :root {
-  --bodyFont: 'Biotif', sans-serif;
-  --headingFont: 'Neuzeit Grotesk Bold', sans-serif;
+  --bodyFont: 'IBMPlexSans', sans-serif;
+  --headingFont: 'IBMPlex Bold', sans-serif;
+  --quoteFont: 'IBMPlexSans Italic', sans-serif;
 
   --primaryColor: #f2f2f2;
   --secondaryColor: #8f9ba8;
@@ -146,9 +147,9 @@ Header
 }
 
 .btn-logo span {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 25px;
-  line-height: 38px;
+  line-height: 25px;
   text-decoration: none;
   font-family: var(--headingFont);
 }
@@ -261,7 +262,6 @@ Bio
 }
 
 .tag-btn-key {
-  font-size: 14px;
   border: none;
   cursor: pointer;
   width: 26px;
@@ -274,7 +274,11 @@ Bio
 }
 
 .command-key {
-  font-size: 16px;
+  /* font-size: 17px; */
+}
+
+.k-key {
+  /* line-height: 30px; */
 }
 
 @media (max-width: 525px) {
@@ -399,8 +403,8 @@ About
 .about-description {
   /* width: 100%; */
   /* min-width: 250px; */
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .about-description p {
@@ -440,7 +444,8 @@ Videos
   padding: 20px;
   border-radius: var(--borderRadius);
   background-color: var(--hoverColor);
-  font-family: var(--headingFont);
+  font-family: var(--quoteFont);
+  font-size: italic;
 }
 
 .last-videos-heading {
@@ -558,54 +563,74 @@ General
 
 /*
 ======================
+Command Palette
+Ref: This code was copied from this repository:
+Link: https://github.com/zenorocha/zenorocha.com/blob/master/public/static/css/main.css
+Author: Zeno Rocha
+======================
+*/
+.kbar-blur {
+  background-color: #1a1c1e;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .kbar-blur {
+    background-color: var(--commandColor);
+    -webkit-backdrop-filter: saturate(300%) blur(25px);
+    backdrop-filter: saturate(300%) blur(25px);
+  }
+}
+
+/*
+======================
 Fonts
 ======================
 */
 
 @font-face {
-  font-family: 'Neuzeit Grotesk Bold';
-  src: url('/static/font/NeuzeitGrotesk-Bold.woff2') format('woff2'),
-    url('/static/font/NeuzeitGrotesk-Bold.woff') format('woff');
+  font-family: 'IBMPlex Bold';
+  src: url('/static/font/IBMPlexSans-Bold.woff2') format('woff2'),
+    url('/static/font/IBMPlexSans-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Biotif';
-  src: url('/static/font/Biotif-Bold.woff2') format('woff2'),
-    url('/static/font/Biotif-Bold.woff') format('woff');
+  font-family: 'IBMPlexSans';
+  src: url('/static/font/IBMPlexSans-Bold.woff2') format('woff2'),
+    url('/static/font/IBMPlexSans-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Biotif';
-  src: url('/static/font/Biotif-SemiBold.woff2') format('woff2'),
-    url('/static/font/Biotif-SemiBold.woff') format('woff');
+  font-family: 'IBMPlexSans';
+  src: url('/static/font/IBMPlexSans-Bold.woff2') format('woff2'),
+    url('/static/font/IBMPlexSans-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Biotif';
-  src: url('/static/font/Biotif-Book.woff2') format('woff2'),
-    url('/static/font/Biotif-Book.woff') format('woff');
+  font-family: 'IBMPlexSans';
+  src: url('/static/font/IBMPlexSans-Regular.woff2') format('woff2'),
+    url('/static/font/IBMPlexSans-Regular.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Biotif';
-  src: url('/static/font/Biotif-Regular.woff2') format('woff2'),
-    url('/static/font/Biotif-Regular.woff') format('woff');
+  font-family: 'IBMPlexSans';
+  src: url('/static/font/IBMPlexSans-Regular.woff2') format('woff2'),
+    url('/static/font/IBMPlexSans-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Biotif';
-  src: url('/static/font/Biotif-RegularItalic.woff2') format('woff2'),
-    url('/static/font/Biotif-RegularItalic.woff') format('woff');
+  font-family: 'IBMPlexSans Italic';
+  src: url('/static/font/IBMPlexSans-Italic.woff2') format('woff2'),
+    url('/static/font/IBMPlexSans-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
