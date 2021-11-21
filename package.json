@@ -1,24 +1,32 @@
 {
-  "name": "frank-page",
-  "version": "0.1.0",
+  "name": "frank-personal-page",
+  "version": "3.0.0",
+  "author": "Frank Rocha<>",
+  "description": "Frank Rocha's website",
+  "keywords": [
+    "Portifólio",
+    "Personal site",
+    "Frank Rocha"
+  ],
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "medium-json-feed": "0.0.3",
-    "next": "11.0.1",
+    "@emotion/react": "^11.6.0",
+    "framer-motion": "^5.3.0",
+    "kbar": "0.1.0-beta.21",
+    "next": "12.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.2.0",
-    "react-switch": "^6.0.0",
-    "styled-components": "^5.3.0"
+    "remixicon": "^2.5.0"
   },
   "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.0.1"
+    "eslint": "7",
+    "eslint-config-next": "12.0.3",
+    "prettier": "^2.4.1"
   }
 }
