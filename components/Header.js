@@ -1,5 +1,6 @@
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
+import { useKBar } from 'kbar'
 
 export default function Header() {
   const router = useRouter()
@@ -30,7 +31,12 @@ export default function Header() {
             )
           })}
         </ul>
-        <button type="button" aria-label="Command" className="btn-nav btn-cmd">
+        <button
+          type="button"
+          aria-label="Command Button"
+          className="btn-nav btn-cmd"
+          onClick={useKBar().query.toggle}
+        >
           <i className="ri-command-line"></i>
         </button>
       </nav>
