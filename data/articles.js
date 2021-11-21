@@ -14,13 +14,6 @@ const talks = [
     imageName: 'ciclo-de-vida-npm-2021-08-11.png'
   },
   {
-    title: 'Optional Chaining',
-    url: 'https://workos.com',
-    date: '2021-09-19',
-    readingTime: 1,
-    imageName: 'optional-chaining-2021-09-19.png'
-  },
-  {
     title: 'Mascarando uma String com JS',
     url: 'https://frankrochajs.medium.com/mascarando-uma-string-com-javascript-ee94d6a9e769',
     date: '2021-07-11',
@@ -54,6 +47,13 @@ const talks = [
     date: '2018-07-12',
     readingTime: 2,
     imageName: 'emmet-react-no-vscode-2018-07-12.jpeg'
+  },
+  {
+    title: 'MEAN Stack o que é ?',
+    url: 'https://frankrochajs.medium.com/mean-stack-o-que-%C3%A9-isso-5ade3c5c3735?p=5ade3c5c3735',
+    date: '2018-04-27',
+    readingTime: 2,
+    imageName: 'mean-stack-2018-04-27.png'
   }
 ]
 
