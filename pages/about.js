@@ -46,7 +46,11 @@ function About(props) {
           <h2>Career</h2>
           <ul>
             <li>
-              <span>Nov 2020 to present</span>
+              <span>Mai 2022 to present</span>
+              Working as a Fullstack educator at Driven.com.br
+            </li>
+            <li>
+              <span>Nov 2020 - Dec 2021</span>
               Working as a Sr Javascript and Educator at Betrybe.com
             </li>
             <li>
