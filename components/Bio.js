@@ -10,7 +10,7 @@ export default function Bio() {
           <div className="bio-text">
             <h1>Frank Rocha</h1>
             <p>
-              FullStack developer (Educator at Betrybe / Love JS, Node and PHP)
+              Developer & FullStack Educator at @Driven
             </p>
           </div>
           <div className="bio-photo">
