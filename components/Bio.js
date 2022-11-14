@@ -16,7 +16,7 @@ export default function Bio() {
           <div className="bio-photo">
             <ImageItem
               quality={75}
-              name="iam-min.jpeg"
+              name="me.png"
               path="photos"
               alt="Bio image"
             />
