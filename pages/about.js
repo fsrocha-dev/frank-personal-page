@@ -34,9 +34,9 @@ function About(props) {
             with code.
           </p>
           <p>
-            I work professionally since 2011 (I used Eclipse for PHP). When not
+            I work professionally since 2011. When not
             online, he loves hanging out with his family. He is currently
-            working at a company called Betrybe, helping people break into the
+            working at a company called Driven, helping people break into the
             world of web development.
           </p>
         </div>
@@ -47,7 +47,7 @@ function About(props) {
           <ul>
             <li>
               <span>Mai 2022 to present</span>
-              Working as a Fullstack educator at Driven.com.br
+              Working as a Fullstack and Tech educator at Driven.com.br
             </li>
             <li>
               <span>Nov 2020 - Dec 2021</span>
