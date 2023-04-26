@@ -46,7 +46,11 @@ function About(props) {
           <h2>Career</h2>
           <ul>
             <li>
-              <span>Mai 2022 to present</span>
+              <span>Mai 2023 to present</span>
+              Senior FullStack Developer at RdStation (via Datum)
+            </li>
+            <li>
+              <span>Mai 2022 - Mai 2023</span>
               Working as a Fullstack and Tech educator at Driven.com.br
             </li>
             <li>
