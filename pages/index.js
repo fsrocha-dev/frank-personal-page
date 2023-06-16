@@ -26,7 +26,7 @@ export async function getStaticProps() {
   return {
     props: {
       title: 'Frank Rocha',
-      description: 'Vamos aprender, e nos divertir com javascript!'
+      description: 'FullStack Developer - NodeJS & React instructor',
     }
   }
 }

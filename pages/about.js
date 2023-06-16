@@ -22,7 +22,7 @@ function About(props) {
         <div className="about-photo">
           <ImageItem
             quality={75}
-            name="me.png"
+            name="me.webp"
             path="photos"
             alt="About Frank`s photo"
           />

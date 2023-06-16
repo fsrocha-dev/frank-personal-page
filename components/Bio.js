@@ -10,13 +10,13 @@ export default function Bio() {
 					<div className="bio-text">
 						<h1>Frank Rocha</h1>
 						<p>
-							FullStack Developer & Educator at @Driven
+							Senior Developer (RD Station) & Tech Educator
 						</p>
 					</div>
 					<div className="bio-photo">
 						<ImageItem
 							quality={75}
-							name="me.png"
+							name="me.webp"
 							path="photos"
 							alt="Bio image"
 						/>
