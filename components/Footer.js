@@ -25,14 +25,6 @@ export default function Footer() {
         <span>Twitter</span>
         <i className="ri-twitter-line"></i>
       </a>
-      {/* <a
-        href="https://www.instagram.com/_frankrocha/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <span>Instagram</span>
-        <i className="ri-instagram-line"></i>
-      </a> */}
     </footer>
   )
 }
