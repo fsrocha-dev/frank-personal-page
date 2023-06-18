@@ -86,6 +86,15 @@ export default function CommandBar(props) {
       icon: <Icon name="ri-youtube-line" />
     },
     {
+      id: 'projects',
+      name: 'Projects',
+      shortcut: ['g', 'p'],
+      keywords: 'go-projects',
+      section: 'Go To',
+      perform: () => router.push('/projects'),
+      icon: <Icon name="ri-lightbulb-line" />
+    },
+    {
       id: 'uses',
       name: 'Uses',
       shortcut: ['g', 'u'],
