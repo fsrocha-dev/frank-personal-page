@@ -1,7 +1,7 @@
 import * as React from 'react'
-export default function Icon({name, top = 0, right = 0, bottom = 0, left = 0}) {
+export default function Icon({name, size = 20, top = 0, right = 0, bottom = 0, left = 0}) {
 	const iconStyle = {
-		fontSize: '20px',
+		fontSize: size,
 		position: 'relative',
 		top: `${top}px`,
 		left: `${left}px`,
