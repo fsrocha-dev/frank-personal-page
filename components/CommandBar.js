@@ -11,6 +11,7 @@ import {
   KBarSearch,
   KBarResults
 } from 'kbar'
+import Icon from './ui/Icon'
 
 export default function CommandBar(props) {
   const router = useRouter()
@@ -23,7 +24,7 @@ export default function CommandBar(props) {
       keywords: 'copy-url',
       section: 'General',
       perform: () => navigator.clipboard.writeText(window.location.href),
-      icon: <i className="ri-file-copy-line" style={iconStyle} />
+      icon: <Icon name="ri-file-copy-line" />
     },
     {
       id: 'email',
@@ -33,7 +34,7 @@ export default function CommandBar(props) {
       section: 'General',
       perform: () =>
         window.open('mailto:contato.frankrocha@gmail.com', '_blank'),
-      icon: <i className="ri-mail-line" style={iconStyle} />
+      icon: <Icon name="ri-mail-line" />
     },
     {
       id: 'source',
@@ -46,7 +47,7 @@ export default function CommandBar(props) {
           'https://github.com/fsrocha-dev/frank-personal-page',
           '_blank'
         ),
-      icon: <i className="ri-braces-line" style={iconStyle} />
+      icon: <Icon name="ri-braces-line" />
     },
     {
       id: 'home',
@@ -55,7 +56,7 @@ export default function CommandBar(props) {
       keywords: 'go-home',
       section: 'Go To',
       perform: () => router.push('/'),
-      icon: <i className="ri-home-5-line" style={iconStyle} />
+      icon: <Icon name="ri-home-5-line" />
     },
     {
       id: 'about',
@@ -64,7 +65,7 @@ export default function CommandBar(props) {
       keywords: 'go-about',
       section: 'Go To',
       perform: () => router.push('/about'),
-      icon: <i className="ri-user-line" style={iconStyle} />
+      icon: <Icon name="ri-user-line" />
     },
     {
       id: 'articles',
@@ -73,7 +74,7 @@ export default function CommandBar(props) {
       keywords: 'go-articles',
       section: 'Go To',
       perform: () => router.push('/articles'),
-      icon: <i className="ri-ball-pen-line" style={iconStyle} />
+      icon: <Icon name="ri-ball-pen-line" />
     },
     {
       id: 'videos',
@@ -82,7 +83,16 @@ export default function CommandBar(props) {
       keywords: 'go-videos',
       section: 'Go To',
       perform: () => router.push('/videos'),
-      icon: <i className="ri-youtube-line" style={iconStyle} />
+      icon: <Icon name="ri-youtube-line" />
+    },
+    {
+      id: 'uses',
+      name: 'Uses',
+      shortcut: ['g', 'u'],
+      keywords: 'go-uses',
+      section: 'Go To',
+      perform: () => router.push('/uses'),
+      icon: <Icon name="ri-tools-line" />
     },
     {
       id: 'twitter',
@@ -92,7 +102,7 @@ export default function CommandBar(props) {
       section: 'Follow',
       perform: () =>
         window.open('https://twitter.com/frankrocha_dev', '_blank'),
-      icon: <i className="ri-twitter-line" style={iconStyle} />
+      icon: <Icon name="ri-twitter-line" />
     },
     {
       id: 'linkedin',
@@ -102,7 +112,7 @@ export default function CommandBar(props) {
       section: 'Follow',
       perform: () =>
         window.open('https://www.linkedin.com/in/frankrochadev/', '_blank'),
-      icon: <i className="ri-linkedin-line" style={iconStyle} />
+      icon: <Icon name="ri-linkedin-line" />
     }
   ]
 
@@ -202,12 +212,6 @@ const groupNameStyle = {
   textTransform: 'uppercase',
   letterSpacing: '1px',
   background: 'var(--commandColor)'
-}
-
-const iconStyle = {
-  fontSize: '20px',
-  position: 'relative',
-  top: '-2px'
 }
 
 const kbdStyle = {
