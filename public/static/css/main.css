@@ -9,7 +9,7 @@
   --secondaryColor: #E1E3E7;
   --backgroundColor: #090A0C;
   --commandColor: rgba(63, 63, 70, 0.09);
-  --hoverColor: rgba(63, 63, 70, 0.09);
+  --hoverColor: rgba(63, 63, 70, 0.2);
 
   --green: #8aff80;
   --cyan: #80ffea;
@@ -56,7 +56,7 @@ Useful
 .green-gradient-background {
 	background-image: linear-gradient( 135deg, var(--cyan) 0%, var(--green) 100% );
 }
-.green-text-gradient-background {
+.green-gradient-text{
 	background-size: 100%;
   background-clip: text;
 	background-image: linear-gradient( 135deg, var(--cyan) 0%, var(--green) 100% );
@@ -235,7 +235,7 @@ General
   flex: 1;
   display: flex;
   flex-direction: column;
-  max-width: 690px;
+  max-width: 769px;
   margin: 0 20px;
 }
 

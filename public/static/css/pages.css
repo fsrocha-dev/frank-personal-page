@@ -101,15 +101,15 @@ Articles
 ======================
 */
 
-.last-talks-heading {
-  align-self: flex-start;
-}
-
 .last-talks {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.last-talks-heading {
+  align-self: flex-start;
 }
 
 .last-talk-item {
@@ -290,14 +290,14 @@ Videos
 
 .last-video-content h3 {
   font-size: 20px;
-  margin: 0px 0px 5px 0px;
+  margin-bottom: -15px;
 }
 
 .last-video-content h4 {
   color: var(--secondaryColor);
   font-weight: lighter;
   font-size: 16px;
-  margin: 0px 0px 5px 0px;
+  margin-bottom: 5px;
 }
 
 .last-video-content span {
@@ -338,4 +338,29 @@ Uses
 
 .uses-item:hover {
 	color: var(--secondaryColor);
+}
+
+
+/*
+======================
+Projects
+======================
+*/
+.project-item {
+  flex: 1 1 auto;
+  height: 180px;
+  padding: 22px;
+  margin: 8px 0;
+  border-radius: var(--borderRadius);
+  transition: var(--duration) ease-in-out;
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.project-item:hover {
+  background-color: var(--hoverColor);
+}
+
+.project-content h3{
+  margin: 8px 0px 8px 0px;
 }
