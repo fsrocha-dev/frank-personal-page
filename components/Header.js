@@ -4,7 +4,7 @@ import { useKBar } from 'kbar'
 
 export default function Header() {
   const router = useRouter()
-  const pages = ['About', 'Articles', 'Videos']
+  const pages = ['About', 'Articles', 'Videos', 'Uses']
 
   return (
     <header className="site-header">
