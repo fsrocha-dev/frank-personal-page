@@ -95,8 +95,8 @@ function Uses(props) {
 						</a>
 					</li>
 					<li>
-						<a href="https://ohmyz.sh/" target="_blank" rel="noopener noreferrer" className="uses-item">
-							Xablau Theme
+						<a href="https://marketplace.visualstudio.com/items?itemName=miguelsolorio.min-theme" target="_blank" rel="noopener noreferrer" className="uses-item">
+							Min Theme
 						</a>
 					</li>
 					<li>
