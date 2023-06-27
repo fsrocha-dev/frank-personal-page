@@ -70,6 +70,11 @@ function Uses(props) {
 						</a>
 					</li>
 					<li>
+						<a href="https://www.amazon.com.br/SUPORTE-MONITOR-NOTEBOOK-ARTICULA%C3%87%C3%83O-DUPLA/dp/B08QKWVMQC/ref=asc_df_B08QKWVMQC/?tag=googleshopp00-20&linkCode=df0&hvadid=379728501964&hvpos=&hvnetw=g&hvrand=3729085437672524839&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031702&hvtargid=pla-1122787980461&psc=1" target="_blank" rel="noopener noreferrer" className="uses-item">
+							Suport - Monitor And Notebok Double Army
+						</a>
+					</li>
+					<li>
 						<a href="https://www.cavaletti.com.br/produtos/way-gamer/" target="_blank" rel="noopener noreferrer" className="uses-item">
 							Chair - Cavaletti Way-Gamer Red
 						</a>
