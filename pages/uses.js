@@ -199,6 +199,31 @@ function Uses(props) {
 							Gif Converter
 						</a>
 					</li>
+					<li>
+						<a href="https://mounty.app/" target="_blank" rel="noopener noreferrer" className="uses-item">
+							Mounty
+						</a>
+					</li>
+					<li>
+						<a href="https://getutm.app/" target="_blank" rel="noopener noreferrer" className="uses-item">
+							UTM
+						</a>
+					</li>
+					<li>
+						<a href="https://orbstack.dev/" target="_blank" rel="noopener noreferrer" className="uses-item">
+							OrbStack
+						</a>
+					</li>
+					<li>
+						<a href="https://iina.io/" target="_blank" rel="noopener noreferrer" className="uses-item">
+							IINA
+						</a>
+					</li>
+					<li>
+						<a href="https://arc.net/" target="_blank" rel="noopener noreferrer" className="uses-item">
+							ArcBrowser
+						</a>
+					</li>
 				</ul>
 			</section>
 			<section>
